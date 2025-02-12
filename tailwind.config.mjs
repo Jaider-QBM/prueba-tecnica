@@ -7,10 +7,17 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      letterSpacing:{
+        'extra-wide': '.30em',
+        'extra-sm': '.50em',
+        'extra-large' : '1.1em', 
+        'extra-largex': '1.3em'
       },
+      colors:{
+        'custom-yellow': '#D99A4E',
+        'yellow-dark': '#D99A4E',
+      },
+      
     },
   },
   plugins: [],
