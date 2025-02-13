@@ -33,7 +33,6 @@ const navItems = [
   }
 ]
 
-
 export function Header() {
   const data = apiData.read();
 
