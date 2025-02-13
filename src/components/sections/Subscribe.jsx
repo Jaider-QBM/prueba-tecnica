@@ -29,17 +29,17 @@ export function Subscribe() {
   };
 
   return (
-    <div className="static px-2 2xl:px-[21rem] 2xl:py-14 bg-[#1B233D]">
+    <div className="static px-8 py-8 lg:py-10 xl:px-36 xl:py-14 2xl:px-[21rem] bg-[#1B233D]">
       <div className="flex justify-center items-center">
         <form onSubmit={handleSubmit}>
           <div className="flex flex-col justify-center">
-            <label className="font-base text-white 2xl:text-3xl text-center">
+            <label className="font-base text-white lg:text-xl xl:text-3xl text-center">
               Suscríbete a nuestro newsletter y recibe noticias, descuentos y más
             </label>
             <input
               type="email"
               placeholder="Correo Electronico"
-              className="mt-4 2xl:h-16 2xl:px-6 border rounded-xl"
+              className="mt-4 h-10 px-3 xl:h-16 xl:px-6 border rounded-xl"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
@@ -48,7 +48,7 @@ export function Subscribe() {
           <div className="flex justify-center items-center mt-12">
             <button
               type="submit"
-              className="bg-yellow-dark text-white rounded-xl font-extrabold 2xl:text-3xl 2xl:py-3 2xl:px-10"
+              className="bg-yellow-dark text-white rounded-xl font-extrabold text-base py-3 px-5 xl:text-3xl xl:py-3 xl:px-10"
               disabled={isSubmitting}
             >
               {isSubmitting ? 'Enviando...' : 'SUSCRIBIRME'}

@@ -76,10 +76,10 @@ export function Footer() {
   const data = apiData.read();
 
   return (
-    <footer className="bg-white py-8 2xl:px-40">
+    <footer className="bg-white py-16 2xl:px-40">
       <div className="flex flex-wrap justify-center 2xl:justify-start">
         <div className="sm:w-1/3 flex flex-col items-start mb-6 sm:mb-0 2xl:w-[27.5rem]">
-          <div className="2xl:w-72">
+          <div className="w-56 2xl:w-72">
             {
               data?.map(({id,logo})=>(
                 <Image
@@ -104,7 +104,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="sm:w-1/3 flex flex-col items-start mb-6 sm:mb-0 2xl:w-[25rem]">
+        <div className="sm:w-1/3 flex flex-col text-center lg:text-start mb-6 sm:mb-0 2xl:w-[25rem]">
           <ul className="space-y-1">
             {
               optionItems?.map(({title, label, url})=> (
@@ -116,7 +116,7 @@ export function Footer() {
           </ul>
         </div>
 
-        <div className="sm:w-1/3 flex flex-col items-start mb-6 sm:mb-0 2xl:w-[23rem] 2xl:px-5 font-[450]">
+        <div className="sm:w-1/3 flex flex-col px-8 mb-6 sm:mb-0 2xl:w-[25rem]">
           {
             data?.map(({email,phone,direction})=> (
               <>
